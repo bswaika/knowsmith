@@ -1,0 +1,45 @@
+.lp-nav{
+    margin-top: 3rem;
+    height: 3rem;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+.lp-nav-override-height{
+    min-height: 0px !important;
+}
+
+.lp-nav-logo{
+    padding: 10px calc(1.8rem - 15px);
+    max-width: auto;
+    height: 100%;
+    display: block;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px){
+    .lp-nav-logo{
+        margin: 0 auto;
+    }
+}
+
+.lp-nav-navbar{
+    text-align: center;
+    background-color: #ee3937;
+}
+
+.lp-nav-navbar-row{
+    transform: translateY(50%);
+}
+
+.nav-active{
+    color: #201d1d;
+    /* border-bottom: 3px solid #201d1d; */
+    border-top: 3px solid #201d1d;
+    transition: all ease-in 200ms;
+}

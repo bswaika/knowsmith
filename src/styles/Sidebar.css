@@ -1,0 +1,74 @@
+.sdbr{
+    /* height: calc(100vh - 3rem) !important; */
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left:0;
+    padding: 4rem 0.5rem;
+    text-align: right;
+}
+
+@media screen and (max-width:767px){
+    .sdbr{
+        display: none;
+    }
+}
+
+.sdbr h2{
+    margin-bottom: 1.5rem;
+}
+
+.sdbr ul{
+    list-style: none;
+}
+
+.sdbr ul li{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+
+.sdbr ul li::after{
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+    position: absolute;
+    top: calc(50% + 2px);
+    right: calc(-0.75rem - 16px);
+    transform: translateY(-50%);
+    outline-offset: 2px;
+}
+
+.active-orange {
+    font-weight: 600;
+    color: #ee3937;
+    transition: all 200ms ease-in;
+}
+
+.active-darkGray {
+    font-weight: 600;
+    color: #201d1d;
+    transition: all 200ms ease-in;
+}
+
+.sdbr ul.sdbr-orange li::after{
+    background-color: #4f4f4f;
+    outline: 1px solid #4f4f4f;
+}
+
+.sdbr ul.sdbr-darkGray li::after{
+    background-color: #f16667;
+    outline: 1px solid #f16667;
+}
+
+.sdbr ul.sdbr-orange .active-orange li::after{
+    background-color: #ee3937;
+    outline: 1px solid #ee3937;
+}
+
+.sdbr ul.sdbr-darkGray .active-darkGray li::after{
+    background-color: #201d1d;
+    outline: 1px solid #201d1d;
+}

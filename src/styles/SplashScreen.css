@@ -1,0 +1,156 @@
+.lp-splash-parent{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    
+}
+
+.lp-splash-container{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.lp-splash-logo{
+    width: 60%;
+    height: auto;
+    opacity: 0;
+    animation: logoFade 1300ms ease 200ms, logoGrow 400ms ease 200ms;
+}
+
+@media screen and (max-width: 767px){
+    .lp-splash-logo{
+        width: 90%;
+    }
+}
+
+.lp-splash-loader-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    animation: disappear 100ms ease 1000ms forwards;
+}
+
+@keyframes disappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes logoFade {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes logoGrow {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
+.lp-splash-loader{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #201d1d;
+    animation: loader 1.5s infinite ease;
+}
+
+.lp-splash-loader.loader-orange-larger{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ee3937;
+    top: -5px;
+}
+
+.lp-splash-loader.loader-orange-larger .lp-splash-loader-inner{
+    background-color: #ee3937;
+}
+
+.lp-splash-loader-inner{
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #201d1d;
+    animation: loaderInner 1.5s infinite ease;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(180deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      75% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes loaderInner {
+    0% {
+        height: 0%;
+      }
+      25% {
+        height: 0%;
+      }
+      50% {
+        height: 100%;
+      }
+      75% {
+        height: 100%;
+      }
+      100% {
+        height: 0%;
+      }
+}
+
+.lp-splash-flush{
+    display: inline-block;
+    width: 100%;
+    background-color: #ee3937;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    animation: orangeFlush 500ms ease 1100ms;
+}
+
+@keyframes orangeFlush{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}

@@ -1,0 +1,63 @@
+.form-group{
+    margin-bottom: 0.75rem;
+    color: #201d1d;
+    transition: color 500ms ease;
+}
+
+.form-error{
+    color: #4f4f4f;
+}
+
+.form-group:focus-within .form-label{
+    color: #fff;
+}
+
+.form-input{
+    outline: none;
+    border:none;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 300;
+    border-bottom: 3px solid #201d1d;
+    color: #201d1d;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    font-size: 1em;
+    margin-top: 0.2rem;
+    transition: border 500ms ease;
+}
+
+.form-input:focus-within{
+    border-bottom: 3px solid #fff;
+}
+
+textarea.form-input{
+    resize: none;
+    overflow-y: auto;
+}
+
+textarea::-webkit-scrollbar{
+    width: 12px;
+    background-color: #201d1d;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: #4f4f4f;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+}
+
+button:focus{
+    outline:0;
+}
+
+.form-btnDiv{
+    border-color: #fff;
+}

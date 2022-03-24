@@ -1,0 +1,4 @@
+ee3937 - orange
+201d1d - dark-gray
+f16667 - light-orange
+4f4f4f - light-gray

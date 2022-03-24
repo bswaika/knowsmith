@@ -1,0 +1,25 @@
+.social{
+    display: inline-block;
+    color: #4f4f4f;
+    padding: 5px 10px;
+    border: 3px solid #4f4f4f;
+    transition: all ease-in-out 200ms;
+}
+
+.social:hover{
+    color: #ee3937;
+    border: 3px solid #ee3937;
+    transform: translateY(-2px);
+}
+
+.lp-footer-text-mobile{
+    line-height: 2.5;
+}
+
+@media screen and (max-width:767px){
+    .lp-footer-text-mobile{
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+}

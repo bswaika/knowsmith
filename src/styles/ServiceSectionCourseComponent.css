@@ -1,0 +1,39 @@
+.lp-service-course-img {
+  width: 80%;
+  height: auto;
+}
+
+.lp-service-img-div {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  border: 0.25em solid #ee393751;
+  background-color: #ee393751;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+  .lp-service-course-img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+}
+
+.lp-service-course-separation {
+  margin-bottom: 2rem;
+}
+
+.lp-service-course {
+  margin-bottom: 2rem;
+}
+
+.lp-service-course-details {
+  padding-right: 1.5rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .lp-service-course-details {
+    padding-right: 15px !important;
+  }
+}

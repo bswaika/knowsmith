@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Poppins:wght@200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+@media screen and (min-width: 576px){
+    html{
+        font-size: calc(16px + 8 * ((100vw - 576px) / 624));
+    }
+}
+
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 24px;
+    }
+}
